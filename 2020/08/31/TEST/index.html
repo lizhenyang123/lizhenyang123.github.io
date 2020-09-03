@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme-color" content=#58b77a>
-  <title>TEST | Forever Young</title>
+  <title>卡尔曼滤波器 | Forever Young</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="李振洋(Lucas)">
   <meta name="keywords" content="老子整把AK">
@@ -87,8 +87,8 @@
   <div class="page-title">
     <div class="avatar"><a href="/"><img src="/images/main.jpg"></a></div>
     <span>2020-08-31</span>
-    <h2>TEST</h2>
-    <div class="tags"><i class="fa fa-tag"></i><a class="tag-none-link" href="/tags/test/" rel="tag">test</a></div>
+    <h2>卡尔曼滤波器</h2>
+    <div class="tags"><i class="fa fa-tag"></i><a class="tag-none-link" href="/tags/math/" rel="tag">math</a></div>
     <div class="social-links">
     <a href="https://github.com/lizhenyang123" target="_blank"><i class="fa fa-github fa-fw"></i></a>
     <a href="mailto:2366369366@qq.com" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
@@ -100,8 +100,22 @@
   <div class="lx-post">
     <div class="lx-entry padding">
       <div>
-        <blockquote class='blockquote-center'><p>人类的悲欢并不相通，我只觉得他们吵闹。<br>——鲁迅</p>
+        <blockquote class="blockquote-center"><p>人类的悲欢并不相通，我只觉得他们吵闹。<br>——鲁迅</p>
 </blockquote>
+<a id="more"></a>
+<hr>
+<h1 id="卡尔曼滤波器"><a href="#卡尔曼滤波器" class="headerlink" title="卡尔曼滤波器"></a>卡尔曼滤波器</h1><hr>
+<div class="note success">
+            <p>write:李振洋(Lucas)</p>
+          </div>
+
+<div class="note info">
+            <hr><h2 id="卡尔曼滤波器递归算法"><a href="#卡尔曼滤波器递归算法" class="headerlink" title="卡尔曼滤波器递归算法"></a>卡尔曼滤波器递归算法</h2><h3 id="估计真实数据"><a href="#估计真实数据" class="headerlink" title="估计真实数据"></a>估计真实数据</h3><p>系统状态方程<br>$$ \widehat{X_{K}}=\widehat{X_{K-1}}+K_k(Z_k-\widehat{X_{K-1}}) $$</p>
+          </div>
+<p><em>公式推导:</em><br>\begin{alignat}{4}<br>    \widehat{X_K}&amp;=\frac{1}{k}(Z_1+Z_2+Z3+….+Z_k) \\<br>    &amp; = \frac{1}{k}(Z_1+Z_2+Z3+….+Z_{k-1})+\frac{1}{k}Z_k \\<br>    &amp; = \frac{1}{k}\frac{k-1}{k-1}(Z_1+Z_2+Z3+….+Z_{k-1})+\frac{1}{k}Z_k \\<br>    &amp; = \frac{k-1}{k}\widehat{X_{K-1}}+\frac{1}{k}Z_k \\<br>    &amp;=\widehat{X_{K-1}}+\frac{1}{k}(Z_k-\widehat{X_{K-1}})<br>\end{alignat}</p>
+<div class="note info">
+            <h3 id="卡尔曼增益-因数："><a href="#卡尔曼增益-因数：" class="headerlink" title="卡尔曼增益/因数："></a><em>卡尔曼增益/因数：</em></h3><p>$$ K_k=\frac{e_{EST_{k-1}}}{e_{EST_{k-1}}-e_{MEA_{k}}} $$</p><h4 id="其他参数"><a href="#其他参数" class="headerlink" title="其他参数"></a>其他参数</h4><p>估计误差： $$ e_{EST_{k}}=(1-K_k)e_{EST_{k-1}} $$<br>测量误差： $$ e_{MEA} $$<br><strong>分析步骤</strong></p><ul><li>第一：计算卡尔曼因数 $$ K_k=\frac{e_{EST_{k-1}}}{e_{EST_{k-1}}-e_{MEA_{k}}} $$</li><li>第二: 计算 $$ \widehat{X_{K}}=\widehat{X_{K-1}}+K_k(Z_k-\widehat{X_{K-1}}) $$</li><li>第三: 更新 $$ e_{EST_{k}}=(1-K_k)e_{EST_{k-1}} $$</li></ul>
+          </div>
 
       </div>
     </div>

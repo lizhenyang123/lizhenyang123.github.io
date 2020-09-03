@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>TEST</title>
+    <title>SDK</title>
+    <url>/2020/09/01/SDK/</url>
+    <content><![CDATA[<h1 id="SHOW"><a href="#SHOW" class="headerlink" title="SHOW"></a>SHOW</h1><p><img src="/2020/09/01/SDK/P1.png" alt="IMAGE"> </p>
+]]></content>
+  </entry>
+  <entry>
+    <title>卡尔曼滤波器</title>
     <url>/2020/08/31/TEST/</url>
-    <content><![CDATA[<blockquote class='blockquote-center'><p>人类的悲欢并不相通，我只觉得他们吵闹。<br>——鲁迅</p>
+    <content><![CDATA[<blockquote class="blockquote-center"><p>人类的悲欢并不相通，我只觉得他们吵闹。<br>——鲁迅</p>
 </blockquote>
+<a id="more"></a>
+<hr>
+<h1 id="卡尔曼滤波器"><a href="#卡尔曼滤波器" class="headerlink" title="卡尔曼滤波器"></a>卡尔曼滤波器</h1><hr>
+<div class="note success">
+            <p>write:李振洋(Lucas)</p>
+          </div>
+
+<div class="note info">
+            <hr><h2 id="卡尔曼滤波器递归算法"><a href="#卡尔曼滤波器递归算法" class="headerlink" title="卡尔曼滤波器递归算法"></a>卡尔曼滤波器递归算法</h2><h3 id="估计真实数据"><a href="#估计真实数据" class="headerlink" title="估计真实数据"></a>估计真实数据</h3><p>系统状态方程<br>$$ \widehat{X_{K}}=\widehat{X_{K-1}}+K_k(Z_k-\widehat{X_{K-1}}) $$</p>
+          </div>
+<p><em>公式推导:</em><br>\begin{alignat}{4}<br>    \widehat{X_K}&amp;=\frac{1}{k}(Z_1+Z_2+Z3+….+Z_k) \\<br>    &amp; = \frac{1}{k}(Z_1+Z_2+Z3+….+Z_{k-1})+\frac{1}{k}Z_k \\<br>    &amp; = \frac{1}{k}\frac{k-1}{k-1}(Z_1+Z_2+Z3+….+Z_{k-1})+\frac{1}{k}Z_k \\<br>    &amp; = \frac{k-1}{k}\widehat{X_{K-1}}+\frac{1}{k}Z_k \\<br>    &amp;=\widehat{X_{K-1}}+\frac{1}{k}(Z_k-\widehat{X_{K-1}})<br>\end{alignat}</p>
+<div class="note info">
+            <h3 id="卡尔曼增益-因数："><a href="#卡尔曼增益-因数：" class="headerlink" title="卡尔曼增益/因数："></a><em>卡尔曼增益/因数：</em></h3><p>$$ K_k=\frac{e_{EST_{k-1}}}{e_{EST_{k-1}}-e_{MEA_{k}}} $$</p><h4 id="其他参数"><a href="#其他参数" class="headerlink" title="其他参数"></a>其他参数</h4><p>估计误差： $$ e_{EST_{k}}=(1-K_k)e_{EST_{k-1}} $$<br>测量误差： $$ e_{MEA} $$<br><strong>分析步骤</strong></p><ul><li>第一：计算卡尔曼因数 $$ K_k=\frac{e_{EST_{k-1}}}{e_{EST_{k-1}}-e_{MEA_{k}}} $$</li><li>第二: 计算 $$ \widehat{X_{K}}=\widehat{X_{K-1}}+K_k(Z_k-\widehat{X_{K-1}}) $$</li><li>第三: 更新 $$ e_{EST_{k}}=(1-K_k)e_{EST_{k-1}} $$</li></ul>
+          </div>
 ]]></content>
       <tags>
-        <tag>test</tag>
+        <tag>math</tag>
       </tags>
   </entry>
   <entry>
@@ -16,9 +36,26 @@
     <content><![CDATA[<h2 id="做大做强，再创辉煌"><a href="#做大做强，再创辉煌" class="headerlink" title="做大做强，再创辉煌"></a>做大做强，再创辉煌</h2>]]></content>
   </entry>
   <entry>
-    <title>SDK</title>
-    <url>/2020/09/01/SDK/</url>
-    <content><![CDATA[<h1 id="SHOW"><a href="#SHOW" class="headerlink" title="SHOW"></a>SHOW</h1><p><img src="/2020/09/01/SDK/P1.png" alt="IMAGE"> </p>
-]]></content>
+    <title>Laplace</title>
+    <url>/2020/09/03/Laplace/</url>
+    <content><![CDATA[<blockquote class="blockquote-center"><p>在数学中，我们发现真理的主要工具是归纳和模拟<br>-Laplace</p>
+</blockquote>
+<a id="more"></a>
+<h1 id="拉普拉斯变换"><a href="#拉普拉斯变换" class="headerlink" title="拉普拉斯变换"></a>拉普拉斯变换</h1><hr>
+<div class="note success">
+            <p>write:李振洋(Lucas)</p>
+          </div>
+
+<div class="note info">
+            <h3 id="公式："><a href="#公式：" class="headerlink" title="公式："></a><strong>公式：</strong></h3><p>\begin{align}<br>L[f(x)]&amp;=\int_{0}^{+\infty}f(x)e^{-st} dt \\<br>s&amp;=\sigma+j\omega<br>\end{align}<br><em>时间函数f(t)的复频域表示方式.</em></p><h4 id="eg"><a href="#eg" class="headerlink" title="eg:"></a><strong>eg:</strong></h4><p>拉普拉斯变换:<br>\begin{align}<br>f(t)&amp;=e^{-at} \\<br>L[f(t)] &amp;= \int_{0}^{+\infty}e^{-at}e^{-st} dt \\<br>&amp; = \int_{0}^{+\infty}e^{-(a+s)t} dt \\<br>&amp; = -\frac{1}{a+s}e^{-(a+s)t}|_{0}^{+\infty} \\<br>&amp; = \frac{1}{s+a}<br>\end{align}</p>
+          </div>]]></content>
+      <tags>
+        <tag>math</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Laplace</title>
+    <url>/2020/09/03/Laplace-1/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>

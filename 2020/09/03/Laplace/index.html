@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme-color" content=#58b77a>
-  <title>SDK | Forever Young</title>
+  <title>Laplace | Forever Young</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="李振洋(Lucas)">
   <meta name="keywords" content="老子整把AK">
@@ -86,9 +86,9 @@
   <div class="overlay">
   <div class="page-title">
     <div class="avatar"><a href="/"><img src="/images/main.jpg"></a></div>
-    <span>2020-09-01</span>
-    <h2>SDK</h2>
-    
+    <span>2020-09-03</span>
+    <h2>Laplace</h2>
+    <div class="tags"><i class="fa fa-tag"></i><a class="tag-none-link" href="/tags/math/" rel="tag">math</a></div>
     <div class="social-links">
     <a href="https://github.com/lizhenyang123" target="_blank"><i class="fa fa-github fa-fw"></i></a>
     <a href="mailto:2366369366@qq.com" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
@@ -100,8 +100,17 @@
   <div class="lx-post">
     <div class="lx-entry padding">
       <div>
-        <h1 id="SHOW"><a href="#SHOW" class="headerlink" title="SHOW"></a>SHOW</h1><p><img src="/2020/09/01/SDK/P1.png" alt="IMAGE"> </p>
+        <blockquote class="blockquote-center"><p>在数学中，我们发现真理的主要工具是归纳和模拟<br>-Laplace</p>
+</blockquote>
+<a id="more"></a>
+<h1 id="拉普拉斯变换"><a href="#拉普拉斯变换" class="headerlink" title="拉普拉斯变换"></a>拉普拉斯变换</h1><hr>
+<div class="note success">
+            <p>write:李振洋(Lucas)</p>
+          </div>
 
+<div class="note info">
+            <h3 id="公式："><a href="#公式：" class="headerlink" title="公式："></a><strong>公式：</strong></h3><p>\begin{align}<br>L[f(x)]&amp;=\int_{0}^{+\infty}f(x)e^{-st} dt \\<br>s&amp;=\sigma+j\omega<br>\end{align}<br><em>时间函数f(t)的复频域表示方式.</em></p><h4 id="eg"><a href="#eg" class="headerlink" title="eg:"></a><strong>eg:</strong></h4><p>拉普拉斯变换:<br>\begin{align}<br>f(t)&amp;=e^{-at} \\<br>L[f(t)] &amp;= \int_{0}^{+\infty}e^{-at}e^{-st} dt \\<br>&amp; = \int_{0}^{+\infty}e^{-(a+s)t} dt \\<br>&amp; = -\frac{1}{a+s}e^{-(a+s)t}|_{0}^{+\infty} \\<br>&amp; = \frac{1}{s+a}<br>\end{align}</p>
+          </div>
       </div>
     </div>
   </div>
@@ -109,7 +118,7 @@
 <div class="lx-navigation">
 	<div class="lx-cover prev lx-cover-sm" style="background-image: url(//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/footer-l.jpeg)">
 		<div class="overlay"></div>
-		<a class="copy" href="/2020/09/03/Laplace/">
+		<a class="copy" href="/2020/09/03/Laplace-1/">
 			<div class="display-t">
 				<div class="display-tc">
 					<div>
@@ -122,12 +131,12 @@
 	</div>
         <div class="lx-cover next lx-cover-sm" style="background-image: url(//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/footer-r.jpeg)">
 		<div class="overlay"></div>
-		<a class="copy" href="/2020/08/31/TEST/">
+		<a class="copy" href="/2020/09/01/SDK/">
 			<div class="display-t">
 				<div class="display-tc">
 					<div>
 						<span>Prev</span>
-						<h3>卡尔曼滤波器</h3>
+						<h3>SDK</h3>
 					</div>
 				</div>
 			</div>
@@ -218,5 +227,35 @@
 </script>
 <script src="//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/js/local.search.js"></script>
 
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+  TeX: {
+          extensions: ["mhchem.js"]
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      document.getElementById(all[i].inputID + '-Frame').parentNode.className += ' has-jax';
+    }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
 </body>
 </html>
