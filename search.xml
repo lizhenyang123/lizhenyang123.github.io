@@ -7,6 +7,29 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Laplace</title>
+    <url>/2020/09/03/Laplace/</url>
+    <content><![CDATA[<blockquote class="blockquote-center"><p>在数学中，我们发现真理的主要工具是归纳和模拟<br>-Laplace</p>
+</blockquote>
+<a id="more"></a>
+<h1 id="拉普拉斯变换"><a href="#拉普拉斯变换" class="headerlink" title="拉普拉斯变换"></a>拉普拉斯变换</h1><hr>
+<div class="note success">
+            <p>write:李振洋(Lucas)</p>
+          </div>
+
+<div class="note info">
+            <h3 id="公式："><a href="#公式：" class="headerlink" title="公式："></a><strong>公式：</strong></h3><p>\begin{align}<br>L[f(x)]&amp;=\int_{0}^{+\infty}f(x)e^{-st} dt \\<br>s&amp;=\sigma+j\omega<br>\end{align}<br><em>时间函数f(t)的复频域表示方式.</em></p><h4 id="eg"><a href="#eg" class="headerlink" title="eg:"></a><strong>eg:</strong></h4><p>拉普拉斯变换:<br>\begin{align}<br>f(t)&amp;=e^{-at} \\<br>L[f(t)] &amp;= \int_{0}^{+\infty}e^{-at}e^{-st} dt \\<br>&amp; = \int_{0}^{+\infty}e^{-(a+s)t} dt \\<br>&amp; = -\frac{1}{a+s}e^{-(a+s)t}|_{0}^{+\infty}<br>\end{align}<br>$$  $$</p>
+          </div>]]></content>
+      <tags>
+        <tag>math</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>老子整把AK</title>
+    <url>/2020/08/31/hello-world/</url>
+    <content><![CDATA[<h2 id="做大做强，再创辉煌"><a href="#做大做强，再创辉煌" class="headerlink" title="做大做强，再创辉煌"></a>做大做强，再创辉煌</h2>]]></content>
+  </entry>
+  <entry>
     <title>卡尔曼滤波器</title>
     <url>/2020/08/31/TEST/</url>
     <content><![CDATA[<blockquote class="blockquote-center"><p>人类的悲欢并不相通，我只觉得他们吵闹。<br>——鲁迅</p>
@@ -29,33 +52,5 @@
       <tags>
         <tag>math</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>老子整把AK</title>
-    <url>/2020/08/31/hello-world/</url>
-    <content><![CDATA[<h2 id="做大做强，再创辉煌"><a href="#做大做强，再创辉煌" class="headerlink" title="做大做强，再创辉煌"></a>做大做强，再创辉煌</h2>]]></content>
-  </entry>
-  <entry>
-    <title>Laplace</title>
-    <url>/2020/09/03/Laplace/</url>
-    <content><![CDATA[<blockquote class="blockquote-center"><p>在数学中，我们发现真理的主要工具是归纳和模拟<br>-Laplace</p>
-</blockquote>
-<a id="more"></a>
-<h1 id="拉普拉斯变换"><a href="#拉普拉斯变换" class="headerlink" title="拉普拉斯变换"></a>拉普拉斯变换</h1><hr>
-<div class="note success">
-            <p>write:李振洋(Lucas)</p>
-          </div>
-
-<div class="note info">
-            <h3 id="公式："><a href="#公式：" class="headerlink" title="公式："></a><strong>公式：</strong></h3><p>\begin{align}<br>L[f(x)]&amp;=\int_{0}^{+\infty}f(x)e^{-st} dt \\<br>s&amp;=\sigma+j\omega<br>\end{align}<br><em>时间函数f(t)的复频域表示方式.</em></p><h4 id="eg"><a href="#eg" class="headerlink" title="eg:"></a><strong>eg:</strong></h4><p>拉普拉斯变换:<br>\begin{align}<br>f(t)&amp;=e^{-at} \\<br>L[f(t)] &amp;= \int_{0}^{+\infty}e^{-at}e^{-st} dt \\<br>&amp; = \int_{0}^{+\infty}e^{-(a+s)t} dt \\<br>&amp; = -\frac{1}{a+s}e^{-(a+s)t}|_{0}^{+\infty} \\<br>&amp; = \frac{1}{s+a}<br>\end{align}</p>
-          </div>]]></content>
-      <tags>
-        <tag>math</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Laplace</title>
-    <url>/2020/09/03/Laplace-1/</url>
-    <content><![CDATA[]]></content>
   </entry>
 </search>
