@@ -38,7 +38,7 @@
 <hr>
 <h1 id="卡尔曼滤波器"><a href="#卡尔曼滤波器" class="headerlink" title="卡尔曼滤波器"></a>卡尔曼滤波器</h1><hr>
 <div class="note success">
-            <p>write:李振洋(Lucas)</p>
+            <p>writer:李振洋(Lucas)</p>
           </div>
 
 <div class="note info">
@@ -51,6 +51,31 @@
 ]]></content>
       <tags>
         <tag>math</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Github_T</title>
+    <url>/2020/09/05/Github-T/</url>
+    <content><![CDATA[<h1 id="Github"><a href="#Github" class="headerlink" title="Github "></a>Github <img src="/2020/09/05/Github-T/GitHub.svg" width="80" height="80" div align="center"></h1><blockquote class="blockquote-center"><p>人类的悲欢并不相通，我只觉得他们吵闹。<br>——鲁迅</p>
+</blockquote>
+<span class="label danger">writer:李振洋(Lucas)</span>
+<a id="more"></a>
+<hr>
+<div class="note primary">
+            <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul><li>注册账号 <a href="https://github.com/">https://github.com/</a></li></ul><p><img src="/2020/09/05/Github-T/01.jpg" alt="image"></p><ul><li>下载Git <a href="https://git-scm.com/">https://git-scm.com/</a></li></ul><p><img src="/2020/09/05/Github-T/02.jpg" alt="image"></p><p>ps:国外网站下载慢，可以到清华大学开源软件镜像站下载：<a href="https://mirrors.tuna.tsinghua.edu.cn/">https://mirrors.tuna.tsinghua.edu.cn/</a></p><p><img src="/2020/09/05/Github-T/03.jpg" alt="image"><br>下载完成后，安装全部默认，只需要一直点<strong>Next</strong></p><ul><li>配置Git<br>打开命令窗口(或者Powershell)，输入查看是否安装成功</li></ul><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="string">git</span> <span class="string">--version</span></span><br></pre></td></tr></table></figure><p><img src="/2020/09/05/Github-T/04.jpg" alt="image"><br>ps:没有，请将安装目录下的bin文件目录(eg: <strong>C:\Program Files\Git\bin</strong>)添加到环境变量<br> 设置用户名称和登录邮箱</p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;xxx&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;xxx@xxx.com&quot;</span></span><br><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;xxx@xxx.com&quot;</span></span><br></pre></td></tr></table></figure><p> <span class="label danger"><strong>要求输入时，直接点回车</strong></span><br>将<strong>C:\Users\23663.ssh</strong>文件夹下的<strong>id_rsa.pub</strong>中内容复制到<br><img src="/2020/09/05/Github-T/05.jpg" alt="image"><br>的Key中，点击<strong>Add SSH Key</strong>保存</p><ul><li>完成上诉步骤之后。就可以使用Git来将代码上传到Github(或者clone别人的项目代码)</li></ul>
+          </div>
+
+<hr>
+<div class="note success">
+            <h2 id="使用Github和Git"><a href="#使用Github和Git" class="headerlink" title="使用Github和Git"></a>使用Github和Git</h2><ul><li>新建仓库<br><img src="/2020/09/05/Github-T/06.jpg" alt="image"></li></ul><p>将仓库clone到计算机,命令窗口(或者Powershell)输入复制的SSH key</p><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="string">git</span> <span class="string">clone</span> <span class="string">git@github.com:xxx.git</span></span><br></pre></td></tr></table></figure><p><img src="/2020/09/05/Github-T/07.jpg" alt="image"></p>
+          </div>
+
+<hr>
+<div class="note danger">
+            <h2 id="Git常用命令"><a href="#Git常用命令" class="headerlink" title="Git常用命令"></a>Git常用命令</h2>
+          </div>]]></content>
+      <tags>
+        <tag>Github</tag>
       </tags>
   </entry>
 </search>

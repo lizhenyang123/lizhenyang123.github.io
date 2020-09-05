@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme-color" content=#58b77a>
-  <title>Tag-math | Forever Young</title>
+  <title>Github_T | Forever Young</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="李振洋(Lucas)">
   <meta name="keywords" content="老子整把AK">
@@ -62,8 +62,7 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
 <meta name="generator" content="Hexo 5.1.1"></head>
 <body>
-
-<div id="page">
+<div class="single">
 <a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i></a>
 <div class="popup search-popup local-search-popup">
   <div class="local-search-header clearfix">
@@ -82,32 +81,77 @@
   <div id="local-search-result"></div>
 </div>
 
-<div id="lx-aside" style="background-image: url(//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/cover.jpeg)">
+<div id="page">
+<div id="lx-aside" style="background-image: url(//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/post_cover.jpeg)" data-stellar-background-ratio="0.5">
   <div class="overlay">
-  <div class="featured">
+  <div class="page-title">
     <div class="avatar"><a href="/"><img src="/images/main.jpg"></a></div>
-    <span>李振洋(Lucas)</span>
-    <h1>Forever Young</h1>
-    <span>——快一步是先进，快三步是先烈</span>
+    <span>2020-09-05</span>
+    <h2>Github_T</h2>
+    <div class="tags"><i class="fa fa-tag"></i><a class="tag-none-link" href="/tags/Github/" rel="tag">Github</a></div>
     <div class="social-links">
     <a href="https://github.com/lizhenyang123" target="_blank"><i class="fa fa-github fa-fw"></i></a>
     <a href="mailto:2366369366@qq.com" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+</div></div>
 </div>
-  </div>
-  </div>
 </div>
 
 <div id="lx-main-content">
   <div class="lx-post">
-  <h2 class="pagehead">Tag math</h2>
-    <div class="lx-entry padding"><div>
-    <span class="lx-post-detail">2020-09-03</span>
-    <h2 class="title"><a href="/2020/09/03/Laplace/">Laplace</a></h2>
-    <p><i class="fa fa-tag"></i><a class="tag-none-link" href="/tags/math/" rel="tag">math</a></p></div></div><div class="lx-entry padding"><div>
-    <span class="lx-post-detail">2020-08-31</span>
-    <h2 class="title"><a href="/2020/08/31/TEST/">卡尔曼滤波器</a></h2>
-    <p><i class="fa fa-tag"></i><a class="tag-none-link" href="/tags/math/" rel="tag">math</a></p></div></div>
+    <div class="lx-entry padding">
+      <div>
+        <h1 id="Github"><a href="#Github" class="headerlink" title="Github "></a>Github <img src="/2020/09/05/Github-T/GitHub.svg" width="80" height="80" div align="center"></h1><blockquote class="blockquote-center"><p>人类的悲欢并不相通，我只觉得他们吵闹。<br>——鲁迅</p>
+</blockquote>
+<span class="label danger">writer:李振洋(Lucas)</span>
+<a id="more"></a>
+<hr>
+<div class="note primary">
+            <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul><li>注册账号 <a target="_blank" rel="noopener" href="https://github.com/">https://github.com/</a></li></ul><p><img src="/2020/09/05/Github-T/01.jpg" alt="image"></p><ul><li>下载Git <a target="_blank" rel="noopener" href="https://git-scm.com/">https://git-scm.com/</a></li></ul><p><img src="/2020/09/05/Github-T/02.jpg" alt="image"></p><p>ps:国外网站下载慢，可以到清华大学开源软件镜像站下载：<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/">https://mirrors.tuna.tsinghua.edu.cn/</a></p><p><img src="/2020/09/05/Github-T/03.jpg" alt="image"><br>下载完成后，安装全部默认，只需要一直点<strong>Next</strong></p><ul><li>配置Git<br>打开命令窗口(或者Powershell)，输入查看是否安装成功</li></ul><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">git</span> <span class="string">--version</span></span><br></pre></td></tr></table></figure><p><img src="/2020/09/05/Github-T/04.jpg" alt="image"><br>ps:没有，请将安装目录下的bin文件目录(eg: <strong>C:\Program Files\Git\bin</strong>)添加到环境变量<br> 设置用户名称和登录邮箱</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;xxx&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;xxx@xxx.com&quot;</span></span><br><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;xxx@xxx.com&quot;</span></span><br></pre></td></tr></table></figure><p> <span class="label danger"><strong>要求输入时，直接点回车</strong></span><br>将<strong>C:\Users\23663.ssh</strong>文件夹下的<strong>id_rsa.pub</strong>中内容复制到<br><img src="/2020/09/05/Github-T/05.jpg" alt="image"><br>的Key中，点击<strong>Add SSH Key</strong>保存</p><ul><li>完成上诉步骤之后。就可以使用Git来将代码上传到Github(或者clone别人的项目代码)</li></ul>
+          </div>
 
+<hr>
+<div class="note success">
+            <h2 id="使用Github和Git"><a href="#使用Github和Git" class="headerlink" title="使用Github和Git"></a>使用Github和Git</h2><ul><li>新建仓库<br><img src="/2020/09/05/Github-T/06.jpg" alt="image"></li></ul><p>将仓库clone到计算机,命令窗口(或者Powershell)输入复制的SSH key</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">git</span> <span class="string">clone</span> <span class="string">git@github.com:xxx.git</span></span><br></pre></td></tr></table></figure><p><img src="/2020/09/05/Github-T/07.jpg" alt="image"></p>
+          </div>
+
+<hr>
+<div class="note danger">
+            <h2 id="Git常用命令"><a href="#Git常用命令" class="headerlink" title="Git常用命令"></a>Git常用命令</h2>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="lx-navigation">
+	<div class="lx-cover prev lx-cover-sm" style="background-image: url(//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/footer-l.jpeg)">
+		<div class="overlay"></div>
+		<a class="copy" href="#">
+			<div class="display-t">
+				<div class="display-tc">
+					<div>
+						<span>Next</span>
+						<h3>No newer post</h3>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+        <div class="lx-cover next lx-cover-sm" style="background-image: url(//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/footer-r.jpeg)">
+		<div class="overlay"></div>
+		<a class="copy" href="/2020/09/03/Laplace/">
+			<div class="display-t">
+				<div class="display-tc">
+					<div>
+						<span>Prev</span>
+						<h3>Laplace</h3>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+</div>
+
+</div>
 
 <footer>
   <div>
@@ -115,8 +159,6 @@
   </div>
 </footer>
 
-  </div>
-</div>
 </div>
 
 <button class="hamburger hamburger--arrow-r" type="button">
